@@ -18,10 +18,11 @@ function letsGo(body){
 				}
 				results = bodyNew.result;
 				console.log(i);
-				if (i>results.lenght){
+				if (i>=results.length-1){
 					reject('done');
 				};
 				body = JSON.parse(body);
+				//console.log(results.length);
 				/*
 				console.log("name: " +body.result[0].listing.account["name"]);
 				console.log(body.result[0].item["name"] +' '+ body.result[0].item["typeLine"]);
@@ -85,8 +86,8 @@ request.post(url, {json: {"query":{"status":{"option": "online"},"name": "The Pa
 			if (e=='done'){
 				console.log('done!');
 			}
-			console.log('reject');
-			callmeCarson3();
+			//console.log('reject');
+			//callmeCarson3();
 		});
 	};
 });
