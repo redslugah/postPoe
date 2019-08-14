@@ -1,0 +1,15 @@
+{
+  "name": "apigggpostmaker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "post.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "promise": "^8.0.3",
+    "request": "^2.88.0"
+  }
+}
